@@ -67,3 +67,9 @@ jobs:
       - name: Deploy
         run: |
           npm run deploy
+      - name: lint
+        run: |
+          ng lint
+      # Delete the feature branch when you have successfully published the front end application. Replace both of the placeholder `<remote name>` and `<branch_name>`
+      - name: Delete Branch
+        run:
